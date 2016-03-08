@@ -8,7 +8,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	$stateProvider
 	.state('home', {
 		url: '/',
-		templateUrl:'/templates/home.html',
+		templateUrl:'templates/home.html',
 		controller: 'hypoCtrl',
 			resolve: {
 			hyposRef: function (hypoService) {
