@@ -18,7 +18,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	})
 	.state('hypothesize', {
 		url: '/hypothesize',
-		templateUrl:'/templates/hypothesize.html',
+		templateUrl:'templates/hypothesize.html',
 		controller: 'hypoCtrl',
 			resolve: {
 			hyposRef: function (hypoService) {
@@ -28,7 +28,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	})
 	.state('hypotheses', {
 		url: '/hypotheses',
-		templateUrl: '/templates/hypotheses.html',
+		templateUrl: 'templates/hypotheses.html',
 		controller: 'hypoCtrl',
 		resolve: {
 			hyposRef: function (hypoService) {
@@ -38,7 +38,7 @@ angular.module('Theorizer', ['ui.router', 'firebase'])
 	})
 	.state('hypo_eval', {
 		url: '/hypothesis/:hypoId/evaluate',
-		templateUrl: '/templates/hypo-evaluate.html',
+		templateUrl: 'templates/hypo-evaluate.html',
 		controller: 'evalCtrl',
 		resolve: {
 			hypoRef: function (hypoService, $stateParams) {
